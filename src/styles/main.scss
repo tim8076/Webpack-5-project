@@ -1,0 +1,11 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  p {
+    font-size: 32px;
+    // 增加下方兩個
+    filter: blur(5px);
+    display: flex;
+  }
+}
