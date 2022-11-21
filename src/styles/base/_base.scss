@@ -1,0 +1,13 @@
+body {
+  font-size: $fs-base;
+  font-family: $font-family-sans-serif;
+  color: $color-dark;
+  background-color: $color-light;
+  line-height: $lh-base;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-cover{
+    object-fit: cover;
+}
+.text-hide{
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+}
+.text-overflow{
+  text-overflow: ellipsis;
+/* Required for text-overflow to do anything */
+  height: 120px;
+  overflow: hidden;
+}

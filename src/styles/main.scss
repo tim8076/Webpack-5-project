@@ -1,11 +1,13 @@
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  p {
-    font-size: 32px;
-    // 增加下方兩個
-    filter: blur(5px);
-    display: flex;
-  }
-}
+@import './abstracts/variables.scss';
+@import './abstracts/mixins';
+@import './abstracts//media-query-up';
+@import './base/reset';
+@import './base/base';
+
+@import './layout/grid';
+@import './helpers/helpers';
+
+@import './components/button';
+
+@import './pages/home';
+

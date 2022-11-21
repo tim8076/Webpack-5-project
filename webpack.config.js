@@ -27,7 +27,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, './src/template.html'), // template file
+      template: path.resolve(__dirname, './src/ejs/index.ejs'), // template file
       filename: 'index.html', // output file
     }),
   ],
@@ -36,6 +36,10 @@ module.exports = {
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.ejs$/i,
+        use: ['html-loader', 'template-ejs-loader'],
       },
       {
         test: /\.m?js$/,
