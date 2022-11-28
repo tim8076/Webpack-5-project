@@ -1,7 +1,7 @@
 import './styles/main.scss';
-import example from './images/example.jpg';
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
 
-console.log(example);
 // Create a class property without a constructor
 class Game {
   name = 'Violin Charades'

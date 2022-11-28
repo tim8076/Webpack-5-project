@@ -1,13 +1,25 @@
-@import './abstracts/variables.scss';
-@import './abstracts/mixins';
-@import './abstracts//media-query-up';
-@import './base/reset';
-@import './base/base';
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables"; // 自訂 scss 變數
+@import "~bootstrap/scss/variables";
 
-@import './layout/grid';
+// Required
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/forms";
+
+@import './base/base';
 @import './helpers/helpers';
 
-@import './components/button';
-
 @import './pages/home';
-
