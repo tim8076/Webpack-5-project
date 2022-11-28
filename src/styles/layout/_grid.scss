@@ -35,16 +35,6 @@
   margin-right: -(math.div($gutter-width, 2));
 }
 
-.no-gutters {
-  margin-left: 0px;
-  margin-right: 0px;
-
-  > [class*='col-'] {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
 @each $key, $value in $grid-breakpoints {
   @if not $value {
     @for $var from 1 through $grid-sum {
@@ -56,13 +46,42 @@
       }
     }
   } @else {
-    @media screen and (max-width: $value) {
+    @media screen and (min-width: $value) {
       @for $var from 1 through $grid-sum  {
         .col-#{$key}-#{$var} {
           max-width: 100% * (math.div($var, $grid-sum));
           flex: 0 0 (100% * (math.div($var, $grid-sum)));
+          padding-left: math.div($gutter-width, 2);
+          padding-right: math.div($gutter-width, 2);
         }
       }
+    }
+  }
+}
+
+// gutter widths
+@each $key, $val in $gutters {
+  .g-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+
+    >[class*='col-'] {
+      padding: $val;
+    }
+  }
+  .gx-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+
+    >[class*='col-'] {
+      padding-left: $val;
+      padding-right: $val;
+    }
+  }
+  .gy-#{$key} {
+    >[class*='col-'] {
+      padding-top: $val;
+      padding-bottom: $val;
     }
   }
 }

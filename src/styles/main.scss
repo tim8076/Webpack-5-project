@@ -1,5 +1,6 @@
 @import './abstracts/variables.scss';
 @import './abstracts/mixins';
+@import './abstracts/function';
 @import './abstracts//media-query-up';
 @import './base/reset';
 @import './base/base';
@@ -8,6 +9,9 @@
 @import './helpers/helpers';
 
 @import './components/button';
+@import './components/card';
 
 @import './pages/home';
 
+@import './utils/colors';
+@import './utils/utilities';
