@@ -1,4 +1,4 @@
-@import './abstracts/variables.scss';
+@import './abstracts/variables';
 @import './abstracts/mixins';
 @import './abstracts/function';
 @import './abstracts//media-query-up';
@@ -10,8 +10,8 @@
 
 @import './components/button';
 @import './components/card';
+@import './components/form-control';
 
 @import './pages/home';
 
-@import './utils/colors';
 @import './utils/utilities';
